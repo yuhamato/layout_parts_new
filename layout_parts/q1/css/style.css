@@ -2,4 +2,40 @@
 
 /* 回答はここに書いてね */
 
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.mainbox{
+  width: 900px;
+  margin: 0 auto;
+  background-color: #eff3f4;
+  padding: 20px;
+  
+  margin-top: 20px;
+  
+}
+
+.bluebox{
+  width: 230px;
+  float: left;
+  background-color: #3274ae;
+  margin-left: 20px;
+  padding: 20px;
+  /* box-sizing: border-box; */
+}
+
+.bluebox:first-child{
+  margin-left: 0;
+}
+
+.boxcontents{
+  font-size: 16px;
+  line-height: 16px;
+  background-color: #eaf4ff;
+  border: 10px solid #022336;
+  padding: 20px;
+}
 /* 回答はここに書いてね */
