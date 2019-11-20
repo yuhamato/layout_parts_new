@@ -14,7 +14,7 @@
   background-color: #eff3f4;
   padding: 20px;
   
-  margin-top: 20px;
+  /* margin-top: 20px; ここを修正（html側のdivのクラスの指定が間違っていた）*/
   
 }
 
@@ -39,3 +39,5 @@
   padding: 20px;
 }
 /* 回答はここに書いてね */
+
+
