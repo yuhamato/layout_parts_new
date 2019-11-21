@@ -6,7 +6,7 @@
   table-layout: fixed;
 }
 
-.table tr:nth-child(2n){
+.table tr:nth-child(2n){ /*2つ飛ばしで適用*/
   background-color:#ecf1f2;
 }
 

@@ -8,7 +8,7 @@
   height: 333px;
   margin: 0 auto;
   position: relative;
-  cursor: pointer; /*カーソルがポインタへ*/
+  cursor: pointer; /*カーソルがポインタになる*/
   overflow: hidden; /*imgboxの子要素がimgboxより大きくてもはみ出すことなく強制的に収める*/
 }
 

@@ -7,7 +7,7 @@
   padding: 20px;
   border: 5px solid #222;
   margin: 0 auto;
-  position: relative;
+  position: relative; /*親要素にかならず*/
 }
 
 /*afterとBeforを使用し吹き出しの三角形の部分を作る。
@@ -16,7 +16,7 @@
 位置は、親要素のbottomを基準とし、borderで指定したpxの倍にする。（枠線が太いほど倍＋多めに？）*/
 
 .fukidashibox::before{ /*吹き出し部分枠の三角形。ブロックからborderのみで三角形を作り出す*/
-  content: "";
+  content: "";  /*これがないと表示されない*/
   position: absolute;
   width: 0;
   height: 0;

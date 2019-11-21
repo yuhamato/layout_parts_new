@@ -25,7 +25,7 @@
   background-color: #ffefd3;
   top: 40px;
   left: 200px;
-  z-index: 1;
+  z-index: 1; /*表示の順番が指定できる*/
 }
 
 
@@ -91,7 +91,7 @@
 
 .box9{
   background-color: #2d69a3;
-  position: fixed;
+  position: fixed;  /*親要素に関係なく、画面内のどこかに配置できる*/
   top: 10px;
   left: 10px;
 }
