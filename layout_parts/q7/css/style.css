@@ -34,6 +34,8 @@
   padding-left: 50px;
 }
 
+/*inlinle横並びになりませんでした*/
+
 .inlineblock{
   display: inline-block;  /*親に何も指定しなくても同じ要素内のものが横並びになる*/
   width: 225px;
@@ -58,6 +60,8 @@
   vertical-align: middle;
   box-sizing: border-box;
 }
+
+/*inlineとmargin横並びになりませんでした*/
 
 .inlinemarginbox{
   display: inline-block;
