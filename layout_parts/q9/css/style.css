@@ -1,5 +1,44 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.fukidashibox{
+  width: 500px;
+  border-radius: 30px;  /*角を丸くする*/
+  padding: 20px;
+  border: 5px solid #222;
+  margin: 0 auto;
+  position: relative;
+}
 
+/*afterとBeforを使用し吹き出しの三角形の部分を作る。
+まずは正方形を考えて、下三角ならborder-topだけに色をつけて他は透明にする。
+枠付きは、色が違うものを２つ用意する。枠（黒）はbeforで吹き出しの本体（白）の方はafterで表現。
+位置は、親要素のbottomを基準とし、borderで指定したpxの倍にする。（枠線が太いほど倍＋多めに？）*/
+
+.fukidashibox::before{ /*吹き出し部分枠の三角形。ブロックからborderのみで三角形を作り出す*/
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border:20px solid transparent;  /*一度全てのborderを透明*/
+  border-top-color:#222;  /*下三角形のため、border-topのみに色をつける*/
+  bottom: -45px;  /*本来はborderで指定した20pxの倍（40px）の値をとる？位置は吹き出し本体（fukidashibox）のbottomから-45pxという意味？::afterより下に配置し枠線部分として表現*/
+  left: 30px;
+}
+
+.fukidashibox::after{ /*吹き出し部分本体側（白い部分）の三角形*/
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border:20px solid transparent;
+  border-top-color:#fff;
+  bottom: -38px;  /*beforの要素より上に配置しbeforを枠線に見せる*/
+  left: 30px;
+  }
+
+.text{
+  font-size: 16px;
+  line-height: 16px;
+}
 /* 回答はここに書いてね */

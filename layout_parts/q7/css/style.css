@@ -2,4 +2,75 @@
 
 /* 回答はここに書いてね */
 
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.floatleft{
+  width: 225px;
+  float: left; /*floatで左へ詰めながら横並び*/
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.floatleft:last-child{
+  margin-left: 50px;
+}
+
+.table{
+  display: table; /*tablecellの親要素に*/
+}
+
+.tablecell{
+  width: 225px;
+  font-size: 16px;
+  display: table-cell;  /*親にdisplay:table;を指定していると横並びになる*/
+  vertical-align: middle; /*垂直方向中央配置*/
+}
+
+.tablecell:last-child{
+  padding-left: 50px;
+}
+
+.inlineblock{
+  display: inline-block;  /*親に何も指定しなくても同じ要素内のものが横並びになる*/
+  width: 225px;
+  /* font-size: 16px; */
+  /* vertical-align: middle; */
+  box-sizing: border-box;
+}
+
+.inlineblock:last-child{
+  margin-left: 50px;
+}
+
+.flexbox{
+  display: flex;  /*横並びさせたい要素の親要素へつける*/
+  justify-content: space-around;  /*flexに使用できる、横余白を均一に配置？*/
+  align-items: flex-end;  /*テキストboxが文字の長さだけになる*/
+}
+
+.flex{
+  width: 225px;
+  font-size: 16px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.inlinemarginbox{
+  display: inline-block;
+  width: 300px;
+  font-size: 16px;
+}
+
+.marginbox{
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  padding-left: 350px;  /*まず、paddingで左から350pxの位置へ*/
+  margin-left: -300px;  /*marginleftを-300pxにすると上に詰まって横並び？*/
+  box-sizing: border-box;
+}
 /* 回答はここに書いてね */
