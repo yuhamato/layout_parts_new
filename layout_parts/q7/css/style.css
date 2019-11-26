@@ -13,10 +13,11 @@
   float: left; /*floatで左へ詰めながら横並び*/
   font-size: 16px;
   box-sizing: border-box;
+  margin-left: 50px;
 }
 
-.floatleft:last-child{
-  margin-left: 50px;
+.floatleft:first-child{
+  margin-left: 0px;
 }
 
 .table{
@@ -36,11 +37,15 @@
 
 /*inlinle横並びになりませんでした*/
 
+.inlineblockbox{
+  font-size: 0; /*inlineの横ならびは、htmlの文字の改行百道とみなされるので、親要素のfont-sizeを０にすると解決*/
+}
+
 .inlineblock{
   display: inline-block;  /*親に何も指定しなくても同じ要素内のものが横並びになる*/
   width: 225px;
-  /* font-size: 16px; */
-  /* vertical-align: middle; */
+  font-size: 16px;
+  vertical-align: middle;
   box-sizing: border-box;
 }
 
@@ -62,7 +67,9 @@
 }
 
 /*inlineとmargin横並びになりませんでした*/
-
+.inlinemarginbox-oya{
+  font-size: 0;
+}
 .inlinemarginbox{
   display: inline-block;
   width: 300px;
